@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Estampados y Sublimación de Case de Celulares">
+    <meta name="keywords" content="Estampados, Sublimación, Case de celulares">
+    <title>Trabaja con nosotros</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #contenedorContenido {
+            background-color: white;
+            padding: 15px 20px;
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            margin: 10px auto;
+            top: 14%;
+            left: 20%;
+            /*margin: -20px 0 0 -20px;*/
+            box-shadow: 2px 2px 9px 1px #555353;
+            margin-bottom: 80px;
+        }
+
+        .formItem {
+            height: 35px;
+            border-radius: 20px;
+            width: 90%;
+            border: none;
+            background-color: #ccc6c6;
+        }
+
+        .control {
+            margin-bottom: 10px;
+        }
+
+        #formTrabaja {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .area,
+        .boton {
+            grid-column: 1 / span 2;
+
+        }
+
+        textarea {
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ccc6c6;
+
+        }
+
+        .btn {
+            width: 25%;
+            height: 35px;
+            margin: 0 37%;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background: #3e4447;
+        }
+
+        .mensaje {
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#a19f9f38">
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div id="contenedorContenido">
+            <div class="formularios">
+                <div>
+                    <h1 style="text-align:center"> Trabaja con nosotros </h1>
+                </div>
+                <form id="formTrabaja">
+                    <div class="control">
+                        <label>Nombres:</label>
+                        <div>
+                            <input type="text" name="nombres" id="nombres" class="formItem" />
+                        </div>
+                    </div>
+
+                    <div class="control">
+                        <label>Apellidos:</label>
+                        <div>
+                            <input type="text" name="apellidos" id="apellidos" class="formItem" />
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label>Tel&eacute;fono:</label>
+                        <div>
+                            <input type="text" name="telefono" id="telefono" class="formItem" />
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label>E-mail:</label>
+                        <div>
+                            <input type="text" name="correo" id="correo" class="formItem" />
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label>Cargo:</label>
+                        <div>
+                            <select name="cargo" id="cargo" class="formItem">
+                                <option value="nada">Seleccionar</option>
+                                <option value="Recepcionista">Recepcionista</option>
+                                <option value="Sublimador">Sublimador</option>
+                                <option value="Bodega">Bodega</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label>Enlace a CV:</label>
+                        <div>
+                            <input type="text" name="cv" id="cv" class="formItem" />
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label> Sexo: </label>
+                        <input id="csexo1" class="csexo" type="checkbox"> Masculino
+                        <input id="csexo2" class="csexo" type="checkbox"> Femenino
+                    </div>
+                    <div class="control area">
+                        <label>Informaci&oacute;n Adicional:</label>
+                        <div class="center">
+                            <textarea id="texto" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <div class="center">
+                            <input type="submit" class="btn btn-primary" value="Aplicar">
+                        </div>
+                        <p class="mensaje"> Estaremos en contacto contigo</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Container">
+        <footer id="Footer">
+            <div id="Redes">
+                <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png"
+                        alt="Instagram"></a>
+            </div>
+            <hr>
+            <div id="Copy">
+                <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+    <script> var form = document.querySelector("#formTrabaja");
+        form.addEventListener('submit', validar);
+        function validar(event) {
+            var resultado = true;
+            var txtNombres = document.getElementById("nombres");
+            var txtApellidos = document.getElementById("apellidos");
+            var txtTelefono = document.getElementById("telefono");
+            var txtemail = document.getElementById("correo");
+            var txtcv = document.getElementById("cv");
+            var selectcargo = document.getElementById("cargo");
+            // Validaciones Regex
+            const letra = /^[a-z ,.'-]+$/i;
+            const correo = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+            const telefonoreg = /^[0-9]{10}$/g;
+            const url = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
+
+            if (!txtNombres.value) {
+                resultado = false;
+                alert("Nombre es requerido");
+            } else if (!letra.test(txtNombres.value)) {
+                resultado = false;
+                alert("Nombre solo debe contener letras");
+            }
+
+            if (!txtApellidos.value) {
+                resultado = false;
+                alert("Apellido es requerido");
+            } else if (!letra.test(txtApellidos.value)) {
+                resultado = false;
+                alert("Apellido solo debe contener letras",);
+            }
+
+            if (!txtTelefono.value) {
+                resultado = false;
+                alert("Teléfono es requerido");
+            } else if (!telefonoreg.test(txtTelefono.value)) {
+                resultado = false;
+                alert("Teléfono debe ser de 10 digitos");
+            }
+
+            if (!txtemail.value) {
+                resultado = false;
+                alert("E-mail es requerido");
+            } else if (!correo.test(txtemail.value)) {
+                resultado = false;
+                alert("Esto no es un E-mail");
+            }
+
+            if (selectcargo.selectedIndex === 0) {
+                resultado = false;
+                alert("Debe seleccionar un cargo");
+            }
+
+            if (!txtcv.value) {
+                resultado = false;
+                alert("Cv es requerido");
+            } else if (!url.test(txtcv.value)) {
+                resultado = false;
+                alert("El formato no es valido");
+            }
+
+            const sexo = document.querySelectorAll(".csexo");
+            let activo = 0
+            sexo.forEach(valor => {
+                if (valor.checked) {
+                    resultado = false;
+                    activo++;
+
+                }
+            }
+            )
+            if (activo === 0) {
+                resultado = false;
+                alert("Debe seleccionar una casilla")
+            } else if (activo > 1) {
+                resultado = false;
+                alert("No puede seleccionar ambas casillas")
+            }
+
+            if (resultado) {
+                event.preventDefault();
+            }
+
+        }        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados y Sublimación de Tazas">
+    <meta name="keywords" content="Tazas, Diseños, Anime">
+    <link rel="stylesheet" href="style.css">
+    <title>Vote por el próximo diseño semanal</title>
+    <style>
+        #box1, #box2, #check1, #check2, #check3, #ComboBox, #diseños1, #diseños2{
+            display: flex;
+            justify-content: space-between;
+        }
+
+       .flip:hover .carta{
+        transform: rotateY(-180deg);        
+       }
+
+       #RadioButton, #diseños1{
+        margin-bottom: 150px;
+       }
+
+        .carta{
+            width: 200px;
+            height: 25px;
+            transform-style: preserve-3d;
+        }
+
+        .delantera, 
+        .trasera{
+            width:200px;
+            height:25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+        }
+
+        .trasera{
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="Container" id="MainContainer">
+            <main>
+                <h1> ¡¡SE PARTE DE LA COMUNIDAD DE G2!!</h1>
+                <br>
+                <h2> ¡¡Elige el próximo diseño de nuestra colección!! </h2>
+                <div>
+                    <form>
+                        <!-- Inicio Textbox-->
+                        <br>
+                        <h3> Información Personal </h3>
+                        <br>
+                        <div id="TexBox">
+                            <div id="box1">
+                                <div>
+                                    <label for="Nombre">Nombre:</label><br>
+                                    <input type="text" class="letras" id="Nombre" style="width: 200px; height: 25px;"><br><br>
+                                </div>    
+                                <div>
+                                    <label for="Apellido">Apellido:</label><br>
+                                    <input type="text" class="letras" id="Apellido" style="width: 200px; height: 25px;"><br><br>
+                                </div>
+                                <div>
+                                    <label for="Edad">Edad:</label><br>
+                                    <input type="text" class="numeros" id="Edad" style="width: 200px; height: 25px;"><br><br>
+                                </div>
+                            </div>
+
+                            <div id="box2">
+                                <div>
+                                    <label for="Email">E-mail:</label><br>
+                                    <input type="text" class="correo" id="Email" style="width: 200px; height: 25px;"><br><br>
+                                </div>
+                                <div>
+                                    <label for="Ciudad">Ciudad:</label><br>
+                                    <input type="text" class="letras" id="Ciudad" style="width: 200px; height: 25px;"><br><br>
+                                </div>
+                                <div>
+                                    <label for="Celular">Celular:</label><br>
+                                    <input type="text" class="numeros" id="Celular" style="width: 200px; height: 25px;"><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inicio Radio Button-->
+                        <br>
+                        <h3> ¡El diseño más votado de la semana será añadido a la colección de la tienda! </h3>
+                        <div id="RadioButton">
+                            <div id="diseños1">
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaBob.png" alt="tazaBob" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r1" value="1">
+                                    <label for="r1"> 1 </label>
+                                </div>
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaMario.png" alt="tazaMario" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r2" value="2">
+                                    <label for="r2"> 2 </label>
+                                </div>
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaPadre.png" alt="tazaPadre" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r3" value="3">
+                                    <label for="r3"> 3 </label>
+                                </div> 
+                            </div>
+
+                            <div id="diseños2">
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaYoda.png" alt="tazaYoda" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r4" value="4">
+                                    <label for="r4"> 4 </label>
+                                </div>
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaSailorMoon.png" alt="tazaSailorMoon" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r5" value="5">
+                                    <label for="r5"> 5 </label>  
+                                </div>
+                                <div>
+                                    <div class="flip">
+                                        <div class="carta">
+                                            <div class="delantera">
+                                                <img src="Imagenes/Sorpresa.png" alt="Incognita" style="width: 250px; height: 250px;">
+                                            </div>
+                                            <div class="trasera">
+                                                <img src="Imagenes/tazaEstatua.png" alt="tazaEstatua" style="width: 250px; height: 250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <input name="eleccion" type="radio" class="radio" id="r6" value="6">
+                                    <label for="r6"> 6 </label>  
+                                </div>
+                            </div>                            
+                        </div>
+            
+
+                        <!-- Inicio CheckBox-->
+                        <br>
+                        <h3> ¿Por qué eligió ese diseño? ¡Puede elegir una o varias opciones! </h3>
+                        <br>
+                        <div id="CheckBox">
+                            <div id="check1">
+                                <div>
+                                    <input type="checkbox" class="check" id="razon1">
+                                    <label for="razon1"> Me gustó su color </label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="check" id="razon2"> 
+                                    <label for="razon2"> Me gustó el personaje </label><br>
+                                </div>
+                            </div>
+                            <div id="check2">
+                                <div>
+                                    <input type="checkbox" class="check" id="razon3">
+                                    <label for="razon5"> Estaba esperando ese diseño </label><br>                                    
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="check" id="razon4">
+                                    <label for="razon4"> La quiero regalar </label><br>
+                                </div>                      
+                            </div>
+                            <div id="check3">
+                                <div>
+                                    <input type="checkbox" class="check" id="razon5">
+                                    <label for="razon6"> Es la que más me gustó </label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="check" id="razon6">
+                                    <label for="razon3"> La quiero comprar </label><br>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!--Inicio Select-->
+                        <br>
+                        <div id="ComboBox">
+                            <h3> ¿De qué serie esperan un diseño a futuro? </h3>
+                            <select id="opciones">
+                                <option value="none" selected disabled hidden>Elija una opción...</option>
+                                <option value="1" > Attack on Titant </option>
+                                <option value="2" > Spy x Family </option>
+                                <option value="3" > Classroom of the Elite </option>
+                                <option value="4" > One Piece </option>
+                                <option value="5" > Overlord </option>
+                                <option value="6" > Dragon Ball Super </option>
+                              </select>
+                        </div>
+                    </form>
+                    <br>
+                    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                        <input type="submit" id="Enviar" value="Enviar" style="font-size: 15pt;" onclick="validacion()">
+                    </div>                    
+                </div>
+            </main>
+        </div>
+        <div class="Container">
+            <footer id="Footer">
+                <div id="Redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div id="Copy">
+                    <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        // Función sólo letras 
+        function ValidarLetras(){
+            var letras = /^[a-z ,.'-,ñ]+$/i;
+            var textboxletras = document.getElementsByClassName("letras");
+
+            for(let i = 0;  i < textboxletras.length; i++){
+                if(!letras.test(textboxletras[i].value)){
+                    window.alert("Solo puede ingresar caracteres válidos en este campo")
+                    event.preventDefault();
+                }
+            }
+        }
+
+        //Función E-mail correcto
+        function ValidarCorreo(){
+            var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var textboxemail = document.getElementsByClassName("correo");
+
+            for(let i = 0;  i < textboxemail.length; i++){
+                if(!correo.test(textboxemail[i].value)){
+                    window.alert("No es válido el e-mail que ha ingresado")
+                    event.preventDefault();
+                }
+            }
+        }
+
+        //Función sólo números
+        function ValidarNumeros(){
+            var num = /^[0-9]+$/i;
+            var textboxnumeros = document.getElementsByClassName("numeros");
+
+            for(let i = 0;  i < textboxnumeros.length; i++){
+                if(!num.test(textboxnumeros[i].value)){
+                    window.alert("Sólo es posible agregar números en este campo");
+                    event.preventDefault();
+                }
+            }
+        }
+
+        //Función RadioButton
+        function RadioButton(){
+            var radio = document.getElementsByClassName("radio");
+            var contador = 0;
+
+            for(var i = 0; i < radio.length; i++){
+                if(!radio[i].checked){
+                    contador++
+                }
+            }
+            if(contador < 1 || contador > 1){
+                window.alert("Debe elegir un diseño de los presentados para enviar su votación");
+                event.preventDefault();
+            }
+        }
+
+        //Función Checkbox
+        function CheckBox(){
+            var checkbox = document.getElementsByClassName("check");
+            var contador = 0;
+
+            for(var i=0; i< checkbox.length; i++) {
+             if(checkbox[i].checked)
+             contador++
+            }
+            if(contador < 2){
+                window.alert("Debe seleccionar 1 elemento como mínimo")
+                event.preventDefault();
+            }
+        }
+
+        function ComboBox(){
+            var combobox = document.getElementById("opciones");
+
+            if(combobox.value == "none"){
+                window.alert("Elija una opcion de las disponibles");
+                event.preventDefault();
+            }
+        }
+
+        //Validación Final
+        function validacion(){
+            ValidarLetras();
+            ValidarCorreo();
+            ValidarNumeros();
+            RadioButton();
+            CheckBox();
+            ComboBox(); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados y Sublimación de Almohadas">
+    <meta name="keywords" content="Estampados, Sublimación, Almohadas">
+    <title>Almohadas</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .informacion1 h1{
+            color: #000000;
+            font-size: 30pt;
+            font-family: 'Times New Roman', Times, serif;
+        }
+         .Carrucel h2{
+            margin-top: 20px;
+            font-size: 40pt;
+            text-align: center;
+            color: #000000;
+            
+            
+         }
+        .contenido1{
+            width: 100%;
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: 40% 60%;
+            justify-content: space-between;
+        }
+        .contenido1 p{
+            margin-top: 20px;
+            text-align: justify;  
+            line-height:200% ;
+        }
+       #Uno{
+           width: 100%;
+           margin: auto;
+           overflow: hidden;
+           background-size: cover;
+           background-position: center;
+           border-radius: 20px;
+           background-image: url("Imagenes/proximamente.jpg");
+           margin-bottom: 10px;
+           margin-top: 20px;
+       }
+       .Carrucel ul{
+            display: flex;
+            padding: 0;
+            width: 400%; 
+            
+            animation: cambio 15s infinite;
+            animation-direction: alternate;
+            animation-timing-function:step-start;
+        }
+        .Carrucel li{
+            display: flex;
+            width: 400%;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .Carrucel img{
+            width: 300px;
+            height: 300px;
+            
+        }
+        @keyframes cambio{
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
+
+            50%{margin-left: -200%;}
+            70%{margin-left: -200%;}
+
+            75%{margin-left: -300%;}
+            100%{margin-left: -300%;}
+
+            
+
+            
+        }
+       #idcard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+        .card{
+            position:relative;
+            width: 300px;
+            height: 350px;
+            margin: 20px;
+            
+        }
+        .card .face{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s; 
+        } 
+        .card .front{
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: 0 5px 10px #000000;
+        }
+        .card .front img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card .front h3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background-color:#00000066;
+            text-align: center;
+        } 
+        .card .back{
+           transform: perspective(600px) rotateY(180deg);
+           background: #032336;
+           padding: 15px;
+           color: #f3f3f3;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           text-align: center;
+           box-shadow: 0 5px 10px #050505;
+        }  
+        .card .back .link{
+            border-top: solid 1px #f3f3f3;
+            height: 50px;
+            line-height: 50px;    
+        }
+        .link a {
+            color: #fff
+        } 
+        .card .back h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+        .card .back p{
+            letter-spacing: 1px;
+        }
+        .card:hover .front{
+            transform: perspective(600px) rotateY(180deg);
+        }
+        .card:hover .back{
+            transform: perspective(600px) rotateY(360deg);
+        }
+        .Titulo2 h2{
+            color: #000000;
+            font-size: 30pt;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #ganga{
+            margin: 10px auto;
+            width: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="container" id="MainContainer">
+            <main class="Main">
+                <div class="contenido1">
+                    <div class="informacion1">
+                        <img class="imagenP" src="Imagenes/Principal.png" alt="almohadas Subliminadas" style="width:300px;">                        
+                    </div>
+                    <div class="informacion1" id="padre">
+                        <h1>Sublimación de Almohadas</h1>
+                        <p id="borrar">Por que sabemos que eres amantes a las almohadas, te gusta estar a la moda y dar un toque distinto a tu cuarto, pensamos en ti y te te traemos una gama de estampados que puedes usar en tus almohadas 
+                            y tener un cuarto más estilizado. Así que dile adios a los forros monotos de un solo color que te compraban en la bahía a promociónes de 3 almohadas por $5 y hecha un vistazo a nuestra galeria de Almohadas
+                            personalizadas que tenemos preparado especialmente para ti.   
+                        </p>
+                        <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                            <input type="submit" id="Premio" value="Premio" style="font-size: 15pt;" onclick="BtnPromo(this)">
+                        </div>
+                        <img id="ganga" style= " display: none; visibility: hidden;" src="Imagenes/descuento1.png" alt="Almohda de los Advengers" > 
+                    </div>
+                </div>
+
+                <section class="Carrucel" id="Uno">
+                    <h2 class="Titulo1"> <b>Próximos Productos<sup>♥</sup></b> </h2>
+                    <ul>
+                        <li>
+                            <img src="Imagenes/Advengers.png" alt="Almohda de los Advengers">
+                            <img src="Imagenes/gato.png" alt="Almohda de gato">
+                            <img src="Imagenes/Kequing.png" alt="Almohda de kequing">
+                            <img src="Imagenes/Rem.png" alt="Almohda de Rem">
+                        </li>
+                    </ul>
+                </section>
+                <!--Nuevo carrucel-->
+                <div class="Titulo2">
+                    <h2 class="Titulo2">Estampados de Animales<sup>♥</sup></h2> 
+                </div>
+                <div id="idcard">         
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/gato1.png" alt="Gatito ojon"> 
+                            <h3>Big Eyes</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Big Eyes</h3>
+                            <p>Almohada suabe - Color Plomo - Elaborada en plumon sintetico siliconado - Espezor 15 cm  - Nivel de Suavidad 8/10 - Estampado de Gato. </p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carta de pantera-->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/gato2.png" alt="Pantera"> 
+                            <h3>Black Panter</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Black Panter</h3>
+                            <p>Almohada suabe - Color Negro- Elaborada en espuma viscoelastica - Espezor 15 cm  - Doble knit acolchado con acabado texturizado de 180 gramos m2. - Estampado de Puma.</p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carta de oso-->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/oso.png" alt="White Bear"> 
+                            <h3>White Bear</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>White Bear</h3>
+                            <p>Almohada suabe - Color Blanco- Rellena de plumón sintético - Espezor 15 cm  - Ideal para conservar la postura rígida de la almohada en todo momento - Estampado de Oso.</p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carta de Perro-->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/perro1.png" alt="God Dog"> 
+                            <h3>God Dog</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>God Dog</h3>
+                            <p>Almohada Semi suabe - Color Blanco- Elaborada en espuma viscoelástica - Densidad de 42 kg/m3  - Ideal para conservar la postura rígida de la almohada en todo momento - Estampado de Perro.</p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carta de conejo-->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/conejo.png" alt="White Rabbit"> 
+                            <h3>White Rabbit</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>White Rabbit</h3>
+                            <p>Almohada suabe - Color Blanco- Elaborada en plumón sintético siliconado - Menor deformabilidad y mayor durabilidad gracias a su borde luxury Manttra - Densidad de 42 kg/m3  - Ideal para conservar la postura rígida de la almohada en todo momento - Estampado de Conejo.</p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carta de leon-->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="Imagenes/leon.png" alt="Leon Face"> 
+                            <h3>Leon Face</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Leon Face</h3>
+                            <p>Almohada suabe - Color Blanco- Elaborada en plumón sintético siliconado - Menor deformabilidad y mayor durabilidad gracias a su borde luxury Manttra - Densidad de 42 kg/m3  - Ideal para conservar la postura rígida de la almohada en todo momento - Estampado de Leon.</p> 
+                            <div class="link">
+                                <a href="#">Details</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </main>
+        </div>
+        <div class="devoluciones" style="margin: auto;">
+            <h2 class="devoluciones" >Si quiere devolver un articulo de click aqui 👇</h2>
+            <a style="display:flex; justify-content: center; font-size: 20pt;" onMouseover="this.style.color='blue'" onMouseout="this.style.color='red'" href="MarcalupoFormulario.html">Devoluciones</a>
+        </div>
+        <div class="Container">
+            <footer id="Footer">
+                <div id="Redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div id="Copy">
+                    <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function BtnPromo(elemento){
+            var  borrar = document.getElementById("borrar")
+            var padre = borrar.parentElement
+            padre.removeChild(borrar)
+
+            var Img = document.querySelector("#ganga")
+            Img.style.visibility="visible"
+            Img.style.display="block"
+           //console.log(e)
+
+            padre.removeChild(elemento.parentElement)
+            // alert("hola")
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

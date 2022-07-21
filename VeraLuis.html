@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados y Sublimación de Case de Camisetas">
+    <meta name="keywords" content="Estampados, Sublimación, Camisetas">
+    <title>Camisetas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #camisassuperheroes{
+            width: 100%;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #camisassuperheroes img{
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #camisassuperheroes img{
+            text-align: center;
+        }
+
+        .camisasuperheroes{
+            padding: 50px;
+        }
+
+        .superheroe{
+            width: 100%;
+            background-image: url("Imagenes/fondosuperheroe3.jpg");
+            background-size: cover;
+            position: relative;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info{
+            width: 100%;
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: 40% 60%;
+            justify-content: space-between;
+        }
+
+        .info p{
+            margin-top: 20px;
+            text-align: justify;  
+        }
+
+        .superheroe h2, img{
+            position: relative;
+        }
+        
+        .superheroe:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #808080;
+            border-radius: 20px;
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .manga{
+            width: 100%;
+            background-image: url("Imagenes/fondomanga2.png");
+            background-size: cover;
+            position: relative;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .manga h2, img{
+            position: relative;
+        }
+        
+        .manga:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #808080;
+            border-radius: 20px;
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .camisasanime{
+            padding: 50px;
+        }
+
+        #camisasanime{
+            width: 100%;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #camisasanime img{
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #camisasanime img{
+            text-align: center;
+        }
+
+        #Main h2{
+            text-align: center;
+        }
+
+        .slider{
+           width: 100%;
+           margin: auto;
+           overflow: hidden;
+           background-image: url(Imagenes/soon2.jpg);
+           background-size: cover;
+           background-position: center;
+           border-radius: 20px;
+
+        }
+
+        .slider ul{
+            display: flex;
+            padding: 0;
+            width: 400%; 
+            animation: cambio 15s infinite;
+            animation-direction: alternate;
+        }
+
+        .slider li{
+            display: flex;
+            width: 400%;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        .slider img{
+            width: 500px;
+            height: 500px;
+        }   
+
+        .Titulos{
+            padding-bottom: 20px;
+            padding-top: 20px ;
+        }
+        
+        @keyframes cambio{
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
+
+            50%{margin-left: -200%;}
+            70%{margin-left: -200%;}
+
+            75%{margin-left: -200%;}
+            100%{margin-left: -200%;}
+        }
+
+        .subrayado{
+            background-color: #808080;
+            border-radius: 5px;
+        }
+
+        .video{
+            margin: 20px;
+        }
+
+        .video h2{
+            margin-bottom: 20px;
+        }
+        #infotext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .distribuidor{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .distribuidor p, h2{
+            padding-bottom: 10px;
+        }
+        #linkformulario{
+            color: #808080;
+        }
+        #linkformulario:hover{
+            color:#000000;
+            cursor: pointer;  
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="Container" id="MainContainer" >
+            <main id="Main">
+                
+                <div class="info">
+                    <div id="infotext">
+                        <img class="infoImg" src="Imagenes/infocamisas.png" alt="Información referende a la sublimación/estampados" style="width: 350px">                        
+                    </div>
+                    <div class="infotext">
+                        <h1>Sublimación de camisetas</h1>
+                        <p>La sublimación de camisetas es una técnica que se emplea cuando se busca <u class="subrayado">estampar con mayor calidad</u> de la que permiten técnicas como
+                             la serigrafía. Consiste en imprimir con plotter la imagen deseada en papel absorbente, una vez teniendo la imagen en el papel, 
+                             éste es planchado sobre la prenda, al ser expuesto al calor se trasfiere la imagen a la prenda.</p>
+                        <p>El proceso que ocurre es exactamente el que se describe en la definición de sublimación: Pasar directamente del estado <mark class="subrayado">sólido al del vapor</mark>. 
+                            Es exactamente el proceso que ocurre con la sublimación textil. La tinta con la que se plasman los diseños en la tela pasa de estado sólido
+                             a gaseoso y en ese estado es cuando penetra en los tejidos para fijarse permanentemente.</p>
+                        <p>Es muy importante tomar en cuenta que necesario que se maneje una marca de tintas exclusivas para plotter y se adapten a la sublimación. Las ventajas de la sublimación
+                             es que no deja molestos o antiestéticos contornos de corte en la imagen y garantiza una mejor adherencia al color, comparado con alternativas como el transfer o el 
+                             corte vinil.
+                             Entre las ventajas del sublimado se encuentra que sus propiedades permiten transferir únicamente las zonas entintadas, manteniendo los colores originales y conservando 
+                             el diseño original aún tras numerosos usos y lavados</p>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <h2>Nuestro proceso</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VPkpoTagNFM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="slider">
+                    <h2 class="Titulos">Próximamente en nuestra 2<sup> da</sup>ronda</h2>
+                    <ul>
+                        <li>
+                            <img src="Imagenes/batman.png" alt="Camiseta de Batman">
+                            <img src="Imagenes/deathnote.png" alt="Camiseta de Deathnote">
+                            <img src="Imagenes/superman.png" alt="Camiseta de Superman">
+                            <img src="Imagenes/nanatsu.png" alt="Camiseta de Nanatsu no Taiza">
+                        </li>
+                    </ul>
+                </div>
+
+                <h2 class="Titulos">Diseños disponibles</h2>
+
+                <div class="superheroe">
+                    <div class="camisasuperheroes">
+                        <h2 style="text-align: center;">Super héroes</h2>
+                    </div>
+                    <section id="camisassuperheroes">
+                        <div class="superheroes">
+                            <img src="Imagenes/hulk.png" alt="Camisa de Hulk">
+                            <h2 class="Titulocamisa">Camiseta de Hulk</h2>
+                        </div>
+                        <div class="superheroes">
+                            <img src="Imagenes/capamerica.png" alt="Camisa del Capitan America">
+                            <h2 class="Titulocamisa">Camiseta de Capitan America</h2>
+                        </div>
+                        <div class="superheroes">
+                            <img src="Imagenes/ironman.png" alt="Camisa de Ironman">
+                            <h2 class="Titulocamisa">Camiseta de Iron man</h2>
+    
+                        </div>
+                        <div class="superheroes">
+                            <img src="Imagenes/spider2.png" alt="Camisa de Spideman">
+                            <h2 class="Titulocamisa">Camiseta de Spiderman</h2>
+    
+                        </div>
+                        <div class="superheroes">
+                            <img src="Imagenes/ojodehalcon.png" alt="Camisa de ojo de halcon">
+                            <h2 class="Titulocamisa">Camiseta de Ojo de halcón</h2>
+    
+                        </div>
+                        <div class="superheroes">
+                            <img src="Imagenes/panteranegra.png" alt="Camisa de pantera negra">
+                            <h2 class="Titulocamisa">Camiseta de Pantera negra</h2>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="manga">
+                    <div class="camisasanime">
+                        <h2 style="text-align: center;">Anime</h2>
+                    </div>
+                    <section id="camisasanime">
+                        <div class="anime">
+                            <img src="Imagenes/onepiece.png" alt="Camisa de One piece">
+                            <h2 class="Titulocamisa">Camiseta de One piece</h2>
+                        </div>
+                        <div class="anime">
+                            <img src="Imagenes/onepunch2.png" alt="Camisa de One punch man">
+                            <h2 class="Titulocamisa">Camiseta de One punch man</h2>
+                        </div>
+                        <div class="anime">
+                            <img src="Imagenes/berserk.png" alt="Camisa de Berserk">
+                            <h2 class="Titulocamisa">Camiseta de Berserk</h2>
+                        </div>
+                        <div class="anime">
+                            <img src="Imagenes/dbz.png" alt="Camisa de Dragon Ball Z">
+                            <h2 class="Titulocamisa">Camiseta de Dragon Ball Z</h2>
+                        </div>
+                        <div class="anime">
+                            <img src="Imagenes/bleach.png" alt="Camisa de Bleach">
+                            <h2 class="Titulocamisa">Camiseta de Bleach</h2>
+                        </div>
+                        <div class="anime">
+                            <img src="Imagenes/naruto.png" alt="Camisa de Naruto">
+                            <h2 class="Titulocamisa">Camiseta de Naruto</h2>
+                        </div>
+                    </section>
+                </div>
+                <input id= enviar type="submit" value="Ver más" style="margin-bottom: 15px" onclick="enviar()">
+                       
+            </main>
+        </div>
+        <div class="Container">
+            <footer id="Footer">
+                <div id="Redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div id="Copy">
+                    <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        //crea elementos por el DOM
+        function verMas(){
+            const main = document.querySelector("main");
+            //crea el div contenedor
+            const divdistribuidor = document.createElement("div");
+            divdistribuidor.className = "distribuidor";
+            main.appendChild(divdistribuidor);
+            //crea un elemento h2 y lo añade al div anterior
+            const h2distribuidor = document.createElement("h2");
+            h2distribuidor.textContent = "Sé nuestro distribuidor autorizado";
+            divdistribuidor.appendChild(h2distribuidor);
+            //crea un elemento p y lo añade al div anterior
+            const p1distribuidor = document.createElement("p");
+            p1distribuidor.textContent = "Para más información complete el siguiente cuestionario";
+            divdistribuidor.appendChild(p1distribuidor);
+            //crea un elemento p y lo añade al div anterior
+            const p2distribuidor = document.createElement("p");
+            p2distribuidor.id = "linkformulario";
+            p2distribuidor.textContent = "Más información aquí";
+            divdistribuidor.appendChild(p2distribuidor);          
+            //elimina el imput de "ver mas"
+            var input = document.querySelector("input");
+            main.removeChild(input);
+            }
+        //Un elemento p actua como un enlace
+        function enlace(){
+            document.getElementById("linkformulario").addEventListener("click",enviar=>{
+                window.location.href = "VeraLuisFormulario.html"
+            })
+        }
+        //llama a las funciones
+        function enviar(){
+            verMas();
+            enlace(); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados y Sublimación de Tazas">
+    <meta name="keywords" content="Tazas, Diseños, Anime">
+    <link rel="stylesheet" href="style.css">
+    <title>Tazas</title>
+    <style>
+        .slider{
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        .slider ul{
+            display: flex;
+            padding: 0;
+            width: 600%;
+            animation:cambio 30s infinite alternate linear;
+        }
+
+        .slider li{
+            width: 100%;
+            list-style: none;
+        }
+
+        .slider img{
+            width:40%;
+            display: flex;
+            margin: 0px auto;
+        }
+
+        @keyframes cambio {
+            0% {margin-left:0;}
+            15% {margin-left:0;}
+
+            16% {margin-left:-100%;}
+            30% {margin-left:-100%;}
+
+            31% {margin-left:-200%;}
+            45% {margin-left:-200%;}
+
+            46% {margin-left:-300%;}
+            60% {margin-left:-300%;}
+
+            61% {margin-left:-400%;}
+            75% {margin-left:-400%;}
+
+            76% {margin-left:-500%;}
+            100% {margin-left:-500%;}
+        }
+
+        #slide1{
+            background-image: url("Imagenes/FondoTaza1.jpg");
+            background-size: cover;
+            border-radius: 50px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        #slide2{
+            background-image: url("Imagenes/FondoTaza2.jpg");
+            background-size: cover;
+            border-radius: 50px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .informacion{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        h3{
+            display: block;
+            white-space: nowrap;
+            width: 35ch;
+            font-size: 25px;
+            animation: typing 1.5s steps(12), blink .5s infinite step-end alternate ;
+            overflow: hidden;
+        }
+
+        @keyframes typing{
+            from { width: 0;}
+        }
+
+        @keyframes blink {
+            50% {border-color: transparent;}
+        }
+
+        p{
+            text-align: justify;
+            font-size: large
+        }
+
+	    #BotonVotar{
+            width:520px;
+            border-radius:10px;
+            background-color:#269e4a;
+            color:#fff;
+            text-decoration:none;
+            margin-bottom: 15px;
+        }
+        #BotonVotar:hover{
+            background-color:transparent;
+            border:2px solid#d4365e;
+            color:#d43636;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div id="MainContainer">
+            <main id="Main">
+                <section id="info" >
+                    <h1>Los mejores diseños del mercado</h1>
+                    <br>
+                    <h2 style="font-size: 25px; text-align: center; " >Estampados y Sublimación </h2>
+                    <div class="informacion" >
+                        <div>
+                            <h3> Mercado en crecimiento</h3>
+                            <p>
+                                Palabras dichas por el <abbr title="Chief Executive Officer"> CEO </abbr> se espera que el negocio global de tazas personalizadas supere los 10 mil millones de dólares en 2025, lo que convierte a este accesorio en un producto ideal para comenzar un negocio.
+                            </p>
+                            <h3>Variedad en colores y calidad premium </h3>
+                            <p>
+                                Todas las tazas del Catálogo de productos están hechas con materiales de primera calidad, respetuosos con el medio ambiente, además de estar disponibles en diferentes colores y tipos de diseños para que puedas combinarlas con cualquier ambiente.
+                            </p>
+                            <h3>Ideales como regalo de empresa </h3>
+                            <p>
+                                Sorprende a tu equipo de trabajo con tazas con el logo o eslogan de tu empresa y haz que crezca su sentimiento de pertenencia.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <img src="Imagenes/muestra.png" alt="Muestra de tazas">
+                        </div>  
+                    </div>
+                </section>
+
+                <section id="slide1">
+                    <h2 style="text-align: center; font-size: 45px;">Diseños Disponibles</h2>
+                        <div class="slider">
+                            <ul>
+                                <li><img class="img" src="Imagenes/tazaPokemon.png" alt="Taza Pokemon"></li>
+                                <li><img class="img" src="Imagenes/tazaWinniePooh.png" alt="Taza Winnie Pooh"></li>
+                                <li><img class="img" src="Imagenes/tazaAmor.png" alt="Taza Amor"></li>
+                                <li><img class="img" src="Imagenes/tazaIron.png" alt="Taza Iron "></li>
+                                <li><img class="img" src="Imagenes/tazaDia-Padre.png" alt="Taza Día del padre"></li>
+                                <li><img class="img" src="Imagenes/tazaSpiderman.png" alt="Taza Spiderman"></li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section id="slide2">
+                    <h2 style="text-align: center; font-size: 45px;">Próximos diseños</h2>
+                        <div class="slider">
+                            <ul>
+                                <li><img class="img" src="Imagenes/tazaNatsu.png" alt="Taza Natsu"></li>
+                                <li><img class="img" src="Imagenes/tazaGoku.png" alt="Taza Goku"></li>
+                                <li><img class="img" src="Imagenes/tazaNaruto.png" alt="Taza Naruto"></li>
+                                <li><img class="img" src="Imagenes/tazaAhegao.png" alt="Taza Ahegao"></li>
+                                <li><img class="img" src="Imagenes/tazaKilllaKill.png" alt="Taza KilllaKill"></li>
+                                <li><img class="img" src="Imagenes/tazaVenti.png" alt="Taza Venti"></li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section id="votos">
+                    <br>
+                    <h2 style="text-align: center; font-size: 35px;"> ¡¡Vote por su diseño favorito para que sea nuestro próximo lanzamiento!!  </h2>
+                    <div id="form">
+                        <br>
+                        <p> En la comunidad de <b>G2 Estampados</b> queremos que nuestros clientes se sientan parte de la misma, por esta razón hemos creado una sección en la que es posible que voten por los próximos diseños que vendrán a la tienda. </p> 
+                        <br>
+                        <p> En esta sección tendrá que rellenar unos cuantos datos y podrá elegir votar por uno de los diseños propuestos, el diseño con más votos por parte de la comunidad será añadido a la tienda la semana siguiente, así que sólo queda decirles ¡vote por el que más le guste! </p>
+                        <br>
+                        <div style="text-align: center;">
+                            <a id="BotonVotar" href="MonserrateJesusFormulario.html">¡¡Pulse aquí para dirigirse al formulario de votación!!</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="Ofertas">
+                    <h2 style="text-align: center; font-size: 35px;"> ¡¡Por la compra de 2 tazas, reclame una 3ra gratis de manera aleatoria!! </h2>                     
+                    <br>
+                    <div style="margin-left: 45%;">
+                        <button onclick="Enviar();"> Mostrar premio </button>
+                    </div>
+                    <br>
+                    <div id="descuento" style="text-align: center;">
+
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="Container">
+            <footer id="Footer">
+                <div id="Redes">
+                    <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                </div>
+                <hr>
+                <div id="Copy">
+                    <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function Random(){
+            var imagenes = document.getElementsByClassName("img");
+            var x = Math.floor(Math.random()*12);
+            return(imagenes[x]);
+        }
+
+        function Click(){
+            document.getElementById("img").src = cambio[Random(10)-1];
+        }
+        function Crear(){
+            const div = document.getElementById("descuento");
+            // crear contenedor 
+            const div_img = document.createElement("div");
+            div.appendChild(div_img);
+            //crear la imagen 
+            const newimg = document.createElement("img");
+            div_img.appendChild(newimg);
+
+            descuentoimg = Random();
+
+            newimg.src = descuentoimg.src;
+        }
+        function Enviar(){
+            RemoveImg()
+            Random();
+            Crear();
+            Click();
+        }
+        //Funcion para eliminar la imagen
+        function RemoveImg(){
+            divImg = document.getElementById("descuento");
+            while(divImg.hasChildNodes()){
+                divImg.removeChild(divImg.lastChild);
+            }
+        }
+    </script>
+</body>
+</html>

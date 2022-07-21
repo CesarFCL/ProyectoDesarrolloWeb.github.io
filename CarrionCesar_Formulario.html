@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados G2">
+    <meta name="keywords" content="Estampados, Sublimación, Camisetas, Tazas, Almohadas, Case de celulares">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Compartenos tu opinion</title>
+    <style>
+        form{
+            margin-top: 40px;
+        }
+        #Formulario{
+            display: block;
+        }
+        #TextBox{
+            display: flex;
+            flex-direction: column;
+        }
+        #ComboBox{
+            display: flex;
+            margin-top: 30px;
+        }
+        #CheckBox{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 11px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .checkbox:nth-child(1){
+            grid-column: 1/4;
+        }
+        #CheckBox2{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 11px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .checkbox2:nth-child(1){
+            grid-column: 1/4;
+        }
+        #TextArea{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        #tBoxEmailEdad{
+            display: flex;
+        }
+        #tBoxNombreApellido{
+            display: flex;
+        }
+        #ContenedorRadioBtn{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        #RadioBtn{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="Container" id="MainContainer">
+            <main id="Main">
+                <h1>¡Tu opinion es importante, ilumínanos!</h1>
+                <div>
+                    <form id="Formulario">
+                        <div id="TextBox">
+                            <div id="tBoxNombreApellido">
+                                <div>
+                                    <label for="Nombre">Nombre</label>
+                                    <input type="text" class="txtletras" id="Nombre" style="width:200px;">
+                                </div>
+                                <div style="margin-left: 30px;">
+                                    <label for="Apellido">Apellido</label>
+                                    <input type="text" class="txtletras" id="Apellido" style="width:200px;">
+                                </div>
+                            </div>
+                            <div style="margin-top: 30px;" id="tBoxEmailEdad">
+                                <div>
+                                    <label for="Email">E-mail</label>
+                                    <input type="text" class="txtemail" id="Email" style="width:250px;">
+                                </div>
+                                <div style="margin-left: 30px;">
+                                    <label for="Edad">Edad</label>
+                                    <input type="text" class="txtnum" id="Edad" style="width:50px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ComboBox">
+                            <p>¿Recomendarias nuestro negocio?</p>
+                            <select id="Recomendacion" style="margin-left: 20px;">
+                                
+                                <option value="none" id="none" selected disabled hidden>Seleccione </option>
+
+                                <option value="Si" id="RecomendSi">Sí</option>
+                            
+                                <option value="No" id="RecomendNo">No</option>
+                            
+                                <option value="Talvez" id="RecomendTalvez">Talvez</option>
+                            
+                            </select>
+                        </div>
+                        <div id="CheckBox">
+                            <p class="checkbox">Elija las 3 características que mas te gusten de nuestra tienda:</p>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Diseño" value="Diseño">
+                                <label for="Diseño"> Diseño de pagina web</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="CalidadProd" value="CalidadProd">
+                                <label for="CalidadProd"> Calidad de productos</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Variedad" value="Variedad">
+                                <label for="Variedad"> Varidad de diseños</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Velocidad" value="Velocidad">
+                                <label for="Velocidad"> Velocidad de entrega</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Atencion" value="Atencion">
+                                <label for="Atencion"> Atención al cliente</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Precios" value="Precios">
+                                <label for="Precios"> Precios</label>
+                            </div>
+                        </div>
+                        <div id="CheckBox2">
+                            <p class="checkbox2">Elija las 3 características que menos te gusten de nuestra tienda:</p>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="Diseño2" value="Diseño">
+                                <label for="Diseño2"> Diseño de pagina web</label>
+                            </div>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="CalidadProd2" value="CalidadProd">
+                                <label for="CalidadProd2"> Calidad de productos</label>
+                            </div>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="Variedad2" value="Variedad">
+                                <label for="Variedad2"> Varidad de diseños</label>
+                            </div>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="Velocidad2" value="Velocidad">
+                                <label for="Velocidad2"> Velocidad de entrega</label>
+                            </div>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="Atencion2" value="Atencion">
+                                <label for="Atencion2"> Atención al cliente</label>
+                            </div>
+                            <div>
+                                <input class="checkbox2 cBox2" type="checkbox" id="Precios2" value="Precios">
+                                <label for="Precios2"> Precios</label>
+                            </div>
+                        </div>
+                        <div id="ContenedorRadioBtn">
+                            <p>Del 1 al 5, donde 5 es la mejor calificación posible. ¿Cómo calificarías nuestra tienda?</p>
+                            <div id="RadioBtn">
+                                <div>
+                                    <input name="calificacion" type="radio" id="radio1" value="1">
+                                    <label for="radio1"> 1</label>
+                                </div>
+                                <div>
+                                    <input name="calificacion" type="radio" id="radio2" value="2">
+                                    <label for="radio2"> 2</label>
+                                </div>
+                                <div>
+                                    <input name="calificacion" type="radio" id="radio3" value="3">
+                                    <label for="radio3"> 3</label>
+                                </div> 
+                                <div>
+                                    <input name="calificacion" type="radio" id="radio4" value="4">
+                                    <label for="radio4"> 4</label>
+                                </div>
+                                <div>
+                                    <input name="calificacion" type="radio" id="radio5" value="5">
+                                    <label for="radio5"> 5</label>  
+                                </div>
+                            </div>
+                        </div>
+                        <div id="TextArea">
+                            <p style="margin-bottom: 15px;">Compartenos tu opinion</p>
+                            <textarea id="Opinion" cols="70" rows="7" style="resize: none;"></textarea>
+                        </div>
+                        <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                            <input type="submit" id="Enviar" value="Enviar" style="font-size: 15pt;" onclick="ValForm('txtletras','txtemail','txtnum','Recomendacion','cBox','cBox2','calificacion')">
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <div class="Container">
+                <footer id="Footer">
+                    <div id="Redes">
+                        <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                    </div>
+                    <hr>
+                    <div id="Copy">
+                        <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        //Método que valida todo el formulario a partir de otros métodos de validación
+        function ValForm(txtletrasClass,txtemailClass,txtnumClass,comboboxID,checkboxClass1,checkboxClass2, radiobtnName){
+            ValSoloLetras(txtletrasClass);
+            ValEmail(txtemailClass);
+            ValSoloNum(txtnumClass)
+            ValComboBox(comboboxID)
+            ValCheckBox(checkboxClass1);
+            ValCheckBox(checkboxClass2);
+            ValRadioBtn(radiobtnName);
+        }
+        //Validación de solo letras
+        function ValSoloLetras(ClassName){
+            var letras = /^[a-z,à-ÿ,.'-,ñ]+$/i;
+            var textboxletras = document.getElementsByClassName(ClassName);
+
+            for(let i = 0;  i < textboxletras.length; i++){
+                if(!letras.test(textboxletras[i].value)){
+                    window.alert("Ingrese solo letras para el Nombre y Apellido");
+                    event.preventDefault();
+                }
+            }
+        }
+        //Validación de email
+        function ValEmail(ClassName){
+            var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var textboxemail = document.getElementsByClassName(ClassName);
+            for(let i = 0;  i < textboxemail.length; i++){
+                if(!correo.test(textboxemail[i].value)){
+                    window.alert("No ha ingresado un formalo de e-mail valido");
+                    event.preventDefault();
+                }
+            }
+        }
+        //Validación solo números
+        function ValSoloNum(ClassName){
+            var num = /^[0-9]+$/i;
+            var textboxletras = document.getElementsByClassName(ClassName);
+            for(let i = 0;  i < textboxletras.length; i++){
+                if(!num.test(textboxletras[i].value)){
+                    window.alert("Ingrese solo números para la Edad");
+                    event.preventDefault();
+                }
+            }
+        }
+        //Validar que se alija una opcion del combobox
+        function ValComboBox(IdElement){
+            var combobox = document.getElementById(IdElement);
+
+            if(combobox.value == "none"){
+                window.alert("Elija una opcion de recomendación");
+                event.preventDefault();
+            }
+        }
+        //Validar que se elijan 3 opciones del checkbox
+        function ValCheckBox(ClassName){
+            var checkbox = document.getElementsByClassName(ClassName);
+            var contador = 0;
+            for(let i = 0;  i < checkbox.length; i++){
+                if(checkbox[i].checked){
+                    contador ++;
+                }
+            }
+            if(contador < 3 || contador > 3){
+                window.alert("Elija únicamente 3 caracteristicas");
+                event.preventDefault();
+            }
+        }
+        //Validar que se elija una opcion en el radio button
+        function ValRadioBtn(Name){
+            var radiobtn = document.getElementsByName(Name);
+            contador = 0;
+            for(let i = 0;  i < radiobtn.length; i++){
+                if(radiobtn[i].checked){
+                    contador ++;
+                }
+            }
+            if(contador < 1 || contador > 1){
+                window.alert("Elija una calificación");
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

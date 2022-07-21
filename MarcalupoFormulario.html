@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Estampados G2">
+    <meta name="keywords" content="Estampados, Sublimación, Camisetas, Tazas, Almohadas, Case de celulares">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Compartenos tu opinion</title>
+    <style>
+        form{
+            margin-top: 40px;
+        }
+        #Form{
+            display: block;
+        }
+        #TextBox{
+            display: flex;
+            flex-direction: column;
+        }
+        #tBoxNameLastname{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        #tBoxcellEmail{
+            display: flex; 
+            justify-content: space-between;
+        }
+        #CheckBox{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            gap: 11px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .checkbox:nth-child(1){
+            grid-column: 1/4;
+        }
+        #ContainerRadioBtn{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        #RadioBtn{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #ContainerIMG{
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+    
+        #factura{
+            margin-top: 30px;
+        }
+        .parrafo{
+            margin-bottom: 15px;
+        }
+        #TextArea{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorPrincipal">
+        <div class="Container">
+            <header id="ContenedorHeader">
+                <div>
+                    <a href="index.html"><img src="Imagenes/G2_Logo.png" alt="G2_Logo" style="width: 75px"></a>
+                </div>
+                <div>
+                    <nav id="Navegacion">
+                        <ul>
+                            <li><a href="VeraLuis.html">Camiseta</a></li>
+                            <li><a href="MonserrateJesus.html">Tazas</a></li>
+                            <li><a href="MarcalupoBraulio.html">Almohadas</a></li>
+                            <li><a href="TorresFausto.html">Case celulares</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="Container" id="MainContainer">
+            <main id="Main">
+                <h1>Devoluciones</h1>
+                <h2>Si hubo un descontento con su producto, favor llenar los campos para procesar su reclamo</h2>
+                <div>
+                    <form id="Form">
+                        <div id="TextBox">
+                            <div class="parrafo">
+                                <h3>Datos Personales</h3>
+                            </div>
+                            <div id="tBoxNameLastname">
+                                <div>
+                                    <label for="Nombre">Nombre</label>
+                                    <input type="text" class="txtletters" id="Nombre">
+                                </div>
+                                <div>
+                                    <label for="Apellido">Apellido</label>
+                                    <input type="text" class="txtletters" id="Apellido">
+                                </div>
+                            </div>
+                            <div id="tBoxcellEmail">
+                               <div>
+                                    <label for="Telefono">Celular</label>
+                                    <input type="text" class="txtnumero" id="Telefono">
+                               </div> 
+                               <div>
+                                    <label for="Email">Email</label>
+                                    <input type="text" class="txtemail" id="Email">                               
+                                </div>
+                            </div>
+                        </div>         
+                        <div id="CheckBox">
+                            <h3 class="checkbox">¿Porque desea devolver nuestro producto?</h3>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Equivocado" value="Equivocado">
+                                <label for="Equivocado">Producto Equivocado</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Dañado" value="Dañado">
+                                <label for="Dañado">Producto Dañado</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Insatisfaccion" value="Insatisfaccion">
+                                <label for="Insatisfaccion">Insatisfaccion del Producto</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Tamaño" value="Tamaño">
+                                <label for="Tamaño">Tamaño Equivocado</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Cambio" value="Cambio">
+                                <label for="Cambio">Cambio del Producto</label>
+                            </div>
+                            <div>
+                                <input class="checkbox cBox" type="checkbox" id="Estampado" value="Estampado">
+                                <label for="Estampado">Estampado Equivocado</label>
+                            </div>
+                        </div>
+                        <div id="ComboBox">
+                            <h3>¿Cuántos Productos desea devolver?</h3>
+                            <select id="Cantidad">
+                                <option value="none" id="none" selected disabled hidden>Seleccione</option>
+                                <option value="1" id="val1">1</option>
+                                <option value="2" id="val2">2</option>
+                                <option value="3" id="val3">3</option>
+                            </select>
+                        </div>
+                        <div id="ContainerRadioBtn">
+                            <div class="parrafo">
+                                <h3>Elija el nombre de su Producto</h3>
+                            </div>
+                            <div id="RadioBtn">
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio1" value="1">
+                                    <label for="radio1">Big Eyes</label>
+                                </div>
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio2" value="2">
+                                    <label for="radio2">Black Panter</label>
+                                </div>
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio3" value="3">
+                                    <label for="radio3">White Bear</label>
+                                </div>
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio4" value="4">
+                                    <label for="radio4">God Dog</label>
+                                </div>
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio5" value="5">
+                                    <label for="radio5">White Rabbit</label>
+                                </div>
+                                <div>
+                                    <input name="Almohada" type="radio" id="radio6" value="6">
+                                    <label for="radio6">Lion Face</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="factura">Seleccione la Factura del Producto</h3>
+                        </div>
+                        <div id="ContainerIMG">
+                            <div class="card">
+                                <div class="card-footer">
+                                    <input type="file" id="ImgUp">
+                                </div>
+                            </div> 
+                        </div>
+                        <div id="TextArea">
+                            <p style="margin-bottom: 15px;">Describe el problema del producto</p>
+                            <textarea id="Opinion" cols="70" rows="7" style="resize: none;"></textarea>
+                        </div>
+                        <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+                            <input type="submit" id="Enviar" value="Enviar" style="font-size: 15pt;" onclick="ValFormulario()">
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <div class="Container">
+                <footer id="Footer">
+                    <div id="Redes">
+                        <a href="https://www.facebook.com" target="_blank"><img src="Imagenes/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="Imagenes/Instagram2.png" alt="Instagram"></a>
+                    </div>
+                    <hr>
+                    <div id="Copy">
+                        <p>Copyright&copy; 2022 - Estampados G2 - Todos los derechos reservados</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        //validar los textbox que tengan solo letras
+        function ValLetters(){
+            var letters = /^[a-z ,.'-,ñ]+$/i;
+            var textboxletters = document.getElementsByClassName("txtletters");
+            for(i = 0; i < textboxletters.length; i++){
+                if(!letters.test(textboxletters[i].value)){
+                    window.alert("Ingrese solo letras");
+                    event.preventDefault(); //sirve para que si la validacion no es correcta el sumit no se efectua
+                }    
+            }
+        }
+        //validar solo numeros en el celular
+        function ValNum(){
+            var num = /^[0-9]+$/i;
+            var textboxnumbers = document.getElementsByClassName("txtnumero");
+
+            for(i = 0; i < textboxnumbers.length; i++){
+                if(!num.test(textboxnumbers[i].value)){
+                    window.alert("Ingrese solo numeros")
+                    event.preventDefault();
+                }
+            }
+        }
+        //validar email
+        function ValEmail(){
+            var email = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var textboxemail = document.getElementsByClassName("txtemail");
+            for(i = 0; i < textboxemail.length; i++){
+                if(!email.test(textboxemail[i].value)){
+                    window.alert("No es un formato valido para un email");
+                    event.preventDefault();
+                }
+            }
+        }
+        //validar que el checkbox este chequeado con al menos 1 y maximo 3
+        function ValCheckBox(){
+            var checkbox = document.getElementsByClassName("checkbox");
+            contador = 0;
+            for(i = 0; i < checkbox.length; i++){
+                if(checkbox[i].checked){
+                    contador ++;
+                }
+            }
+            if(contador < 1 || contador > 3){
+                window.alert("Elija una respuesta como minimo y como maximo 3");
+                event.preventDefault();
+            }
+        }
+        //validar que el combobox tenga seleccionado una opcion
+        function ValComboBox(){
+            var cBox = document.getElementById("Cantidad");
+            if(cBox.value == "none"){
+                window.alert("seleccione una opcion");
+                event.preventDefault();
+            }
+        }
+        //validar que el radio botton tenga seleccionado solo 1 
+        function ValRadioBtn(){
+            var radioBtn = document.getElementsByName("Almohada");
+            contador = 0;
+            for(i = 0; i < radioBtn.length; i++){
+                if(radioBtn[i].checked){
+                    contador ++;
+                }
+            }
+            if(contador < 1 || contador > 1){
+                window.alert("Elija solo un producto")
+                event.preventDefault();
+            }
+        }
+        function ValImg(){
+            var InputImg = document.getElementById("ImgUp");
+            const extenPNG = [".jpg",".jpeg",".png"]
+            if(InputImg.value === ""){
+                alert("Debe subir una imagen")
+                return 
+            }
+        
+            extenPNG.forEach(exten =>{
+                if(!InputImg.value.endsWith(exten)){
+                    alert("Solo se pueden subir imagenes con formato png, jpg")
+                }else{
+                    event.preventDefault();
+                }
+            })
+
+        }
+        function ValFormulario(){
+            ValLetters();
+            ValNum();
+            ValEmail();
+            ValCheckBox();
+            ValComboBox();
+            ValRadioBtn();
+            ValImg();
+        }
+    </script>   
+</body>
+</html>
